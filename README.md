@@ -54,7 +54,7 @@ l. Description: Brief description
     
 ## **3. Data Preprocessing**
 
-**Data preprocessing included the following steps:**
+**Data preprocessing included the following steps:*
 
 #### **I. Handling Missing Values:**
 
@@ -88,7 +88,7 @@ c. Scaled data using Standard Scaler and applied PCA (Principal Component Analys
 
 ## **4. Clustering Approach**
 
-**Two clustering algorithms were applied:**
+**Two clustering algorithms were applied:*
 
 #### **I. K-Means Clustering:**
 
@@ -111,7 +111,7 @@ Using the K-Means clustering model, a recommender system was developed to sugges
 
 ## **6. Hypothesis Testing**
 
-**Two hypothesis tests were conducted:**
+**Two hypothesis tests were conducted:*
 
 #### **I. Sample Mean and Population Mean of Release Year:**
 
