@@ -27,36 +27,36 @@ Clustering is an unsupervised learning method to group similar objects based on 
 
 The dataset, sourced from Flixable (a third-party Netflix search engine), consists of 7,787 rows and 12 columns. Key columns include:
 
-1. Show ID: Unique identifier
+a. Show ID: Unique identifier
 
-2. Type: TV show or movie
+b. Type: TV show or movie
    
-3. Title: Show title
+c. Title: Show title
    
-4. Director: Director of the show
+d. Director: Director of the show
    
-5. Cast: Actors in the show
+e. Cast: Actors in the show
     
-6. Country: Producing nation
+f. Country: Producing nation
     
-7. Date Added: Date added to Netflix
+g. Date Added: Date added to Netflix
     
-8. Release Year: Year of release
+h. Release Year: Year of release
     
-9. Rating: Show rating
+i. Rating: Show rating
     
-10. Duration: Length of the show (in minutes for movies, seasons for TV shows)
+j. Duration: Length of the show (in minutes for movies, seasons for TV shows)
     
-11. Genre: Show genre
+k. Genre: Show genre
     
-12. Description: Brief description
+l. Description: Brief description
 
     
 ## **3. Data Preprocessing**
 
 **Data preprocessing included the following steps:**
 
-### **I. Handling Missing Values:**
+#### **I. Handling Missing Values:**
 
 a. Columns with missing values: Director, Cast, Country, Date Added, and Rating.
 
@@ -64,7 +64,7 @@ b. Imputed missing values in 4 columns by replacing with "unknown."
 
 c. Dropped null values in Date Added (0.09% missing data).
 
-### **II. Data Transformation:**
+#### **II. Data Transformation:**
 
 a. Extracted the number of movies and TV shows each actor appeared in.
 
@@ -78,7 +78,7 @@ e. Created a Latest column to indicate if a show was added the same year it was 
 
 f. Standardized rating values.
 
-### **III. Text Processing:**
+#### **III. Text Processing:**
 
 a. Used NLP techniques on selected columns (Director, Cast, Country, Genre, Description, and Rating) for clustering.
 
@@ -90,13 +90,13 @@ c. Scaled data using Standard Scaler and applied PCA (Principal Component Analys
 
 **Two clustering algorithms were applied:**
 
-### **I. K-Means Clustering:**
+#### **I. K-Means Clustering:**
 
 a. Optimal value of K was chosen using the elbow method and silhouette scores from 1 to 25.
 
 b. Final model: K = 5, with a variance of 58185 and a silhouette score of 0.458.
 
-### **II. Agglomerative Hierarchical Clustering:**
+#### **II. Agglomerative Hierarchical Clustering:**
 
 a. Optimal number of clusters determined by dendrogram analysis.
 
@@ -113,11 +113,11 @@ Using the K-Means clustering model, a recommender system was developed to sugges
 
 **Two hypothesis tests were conducted:**
 
-### **I. Sample Mean and Population Mean of Release Year:**
+#### **I. Sample Mean and Population Mean of Release Year:**
 
 Tested whether the sample mean equals the population mean. The null hypothesis could not be rejected.
 
-### **II. Normality Test for Movie Duration:**
+#### **II. Normality Test for Movie Duration:**
 
 Tested if the duration of movies is normally distributed. The null hypothesis was rejected, indicating that movie duration is not normally distributed.
 
@@ -127,13 +127,13 @@ This project successfully grouped Netflix shows and movies into clusters and dev
 
 ## **8. Installation and Usage**
 
-### **I. Requirements**
+#### **I. Requirements**
 
 a. Python 3.7+
 
 b. Required libraries: pandas, numpy, sklearn, scipy, matplotlib, seaborn, wordcloud, nltk
 
-### **II. Steps to Run**
+#### **II. Steps to Run**
 
 a. Clone the repository and navigate to the project directory.
 
