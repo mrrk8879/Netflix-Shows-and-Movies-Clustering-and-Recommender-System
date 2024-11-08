@@ -140,3 +140,9 @@ a. Clone the repository and navigate to the project directory.
 b. Install the required libraries.
     
 c. Run the Jupyter Notebook or Python scripts to preprocess data, conduct clustering, and run the recommender system.
+
+
+**Contributor:**
+1. Mohammed Rihan Khan.
+2. Abhishek Tyagi. https://github.com/Niviai
+
